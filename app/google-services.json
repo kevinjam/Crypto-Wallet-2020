@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "93034197944",
+    "firebase_url": "https://crypto-market-application.firebaseio.com",
+    "project_id": "crypto-market-application",
+    "storage_bucket": "crypto-market-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93034197944:android:e591f9bd0ef98b1b",
+        "android_client_info": {
+          "package_name": "com.thinkdevs.cryptomarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93034197944-6rd1vnqaau7svb4hgi1m12fp5lmmi9g9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thinkdevs.cryptomarket",
+            "certificate_hash": "3ce289ad90ae90fb5155448b2262fbb06eed4c6f"
+          }
+        },
+        {
+          "client_id": "93034197944-7ti8qeqm3rl26645e936brdhbvs6csf8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thinkdevs.cryptomarket",
+            "certificate_hash": "bf088911f9bbf38e1a326a7b72bd2ba9054c1ca9"
+          }
+        },
+        {
+          "client_id": "93034197944-b981iauql965u9kl56bhqmlhghi31krl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBATtOuSEJNfQKegrs0EMEQ-joTzA9OiXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93034197944-b981iauql965u9kl56bhqmlhghi31krl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

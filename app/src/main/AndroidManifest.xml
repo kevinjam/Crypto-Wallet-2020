@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thinkdevs.cryptomarket">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <application
+        android:name="com.thinkdevs.cryptomarket.Btc"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_id"/>
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <receiver
+            android:name="com.thinkdevs.cryptomarket.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.thinkdevs.cryptomarket.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thinkdevs.cryptomarket.AuthActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.thinkdevs.cryptomarket.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.thinkdevs.cryptomarket.MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.thinkdevs.cryptomarket.LeaderBoardActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.thinkdevs.cryptomarket.MainActivity"/>
+        <activity
+            android:name="com.thinkdevs.cryptomarket.InviteActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.thinkdevs.cryptomarket.MainActivity">
+            <intent-filter>
+                <action android:name="com.actsgi.btc.REFER_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thinkdevs.cryptomarket.BalanceActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.thinkdevs.cryptomarket.MainActivity"/>
+        <activity
+            android:name="com.thinkdevs.cryptomarket.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.thinkdevs.cryptomarket.MainActivity"/>
+        <activity
+            android:name="com.thinkdevs.cryptomarket.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.thinkdevs.cryptomarket.MainActivity"/>
+        <activity
+            android:name="com.thinkdevs.cryptomarket.TransactionActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.thinkdevs.cryptomarket.PayoutActivity">
+            <intent-filter>
+                <action android:name="com.actsgi.btc.PAYOUT_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thinkdevs.cryptomarket.PayoutActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.thinkdevs.cryptomarket.MainActivity"/>
+        <activity
+            android:name="com.thinkdevs.cryptomarket.TsActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.thinkdevs.cryptomarket.MainActivity"/>
+        <activity
+            android:name="com.thinkdevs.cryptomarket.PrivacyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.thinkdevs.cryptomarket.FaqActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.thinkdevs.cryptomarket.TsActivity"/>
+
+
+        <receiver android:name="com.thinkdevs.cryptomarket.TimeReceiver"/>
+    </application>
+
+</manifest>

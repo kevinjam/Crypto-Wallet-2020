@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+
+android {
+
+    compileSdkVersion 30
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        applicationId "com.thinkdevs.cryptomarket"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 9
+        versionName "0.0.9"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-database:16.0.5'
+    implementation 'com.google.android.gms:play-services-base:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'androidx.browser:browser:1.2.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'com.github.guilhe:circular-progress-view:1.2.1'
+    implementation 'com.android.installreferrer:installreferrer:2.1'
+    implementation 'com.google.firebase:firebase-core:16.0.5'
+    implementation 'com.google.firebase:firebase-ads:17.1.1'
+}
+
+
+apply plugin: 'com.google.gms.google-services'
