@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Crypto Wallet 2020</string>
+    <string name="app_name">Crypto Wallet 2021</string>
     <string name="my_profile">My Profile</string>
     <string name="payout_history">Payout History</string>
     <string name="notification_empty">Nothing to see here.</string>
@@ -48,9 +48,9 @@
     <string name="admob_rewarded">ca-app-pub-8831705983843599/1946763415</string>
     <string name="faq_url">FAQ_URL</string>
     <string name="privacy_url">PRIVACY_URL</string>
-    <string name="invite_cap"><![CDATA[Hey I have Installed this App. Crypto Wallet 2020 on Play Store \n]]></string>
-    <string name="support_email">domain277@gmail.com</string>
-    <string name="notification_channel_name">Crypto Wallet 2020</string>
+    <string name="invite_cap"><![CDATA[Hey I have Installed this App. Crypto Wallet 2021 on Play Store \n]]></string>
+    <string name="support_email">info@thinkdevs.com</string>
+    <string name="notification_channel_name">Crypto Wallet 2021</string>
     <string name="default_notification_channel_id" translatable="false">btc_faucet_no_mining_default_channel</string>
 
 
